@@ -1,3 +1,11 @@
+---
+layout: post
+title: Understanding Happiness
+date: 2018-02-03 13:32:20 -0800
+description: # Add post description (optional)
+img: Summer-happiness-photo.jpg # Add image post (optional)
+tags: [Data Science, Regression, Metis, Happiness]
+---
 ## Metis Project 2: Webscraping and OLS Regression
 
 Happiness is a hard thing to pin down.  It's both hard to measure and difficult to explain why some people are happier than others.  
@@ -5,7 +13,6 @@ Happiness is a hard thing to pin down.  It's both hard to measure and difficult 
 The UN endeavors tackle both questions with their annual World Happiness Report (now in it's 5th year), and in this post I'll show how I combined it with some other data to find relationships between a country's characteristics and it's World Happiness Score.
 
 
-![Happy and Free](../images/Happy-and-free.jpg "Happy and Free")
 
 ### Introducing the UN's World Happiness Report
 
@@ -17,13 +24,13 @@ Each country's Happiness Score is calculated by taking an average of it's citize
 
 A complete explanation of the data collected can be found on the Report's website.  The features that I chose to encorporate in my project are defined (by the UN) as:
 
-**Feature**   |  | **Definition** 
----------------|----|------------
-GDP per capita |  |GDP per capita is in terms of Purchasing Power Parity (PPP) adjusted to constant 2011 international dollars, taken from the World Development Indicators (WDI) released by the World Bank in August 2016. See the appendix for more details. GDP data for 2016 are not yet available, so we extend the GDP time series from 2015 to 2016 using country-specific forecasts of real GDP growth from the OECD Economic Outlook No. 99 (Edition 2016/1) and World Bank’s Global Economic Prospects (Last Updated: 01/06/2016), after adjustment for population growth. The equation uses the natural log of GDP per capita, as this form fits the data significantly better than GDP per capita. | 
-Healthy Life Expectancy | |The time series of healthy life expectancy at birth are constructed based on data from the World Health Organization (WHO) and WDI. WHO publishes the data on healthy life expectancy for the year 2012. The time series of life expectancies, with no adjustment for health, are available in WDI. We adopt the following strategy to construct the time series of healthy life expectancy at birth: first we generate the ratios of healthy life expectancy to life expectancy in 2012 for countries with both data. We then apply the country-specific ratios to other years to generate the healthy life expectancy data. See the appendix for more details. | 
-Social Support |  | Social support is the national average of the binary responses (either 0 or 1) to the Gallup World Poll (GWP) question “If you were in trouble, do you have relatives or friends you can count on to help you whenever you need them, or not?” | 
-Freedom to make life choices | |Freedom to make life choices is the national average of binary responses to the GWP question “Are you satisfied or dissatisfied with your freedom to choose what you do with your life?”  | 
-Generosity | |Generosity is the residual of regressing the national average of GWP responses to the question “Have you donated money to a charity in the past month?” on GDP per capita. | 
+**Feature**   | **Definition** 
+---------------|------------
+GDP per capita |GDP per capita is in terms of Purchasing Power Parity (PPP) adjusted to constant 2011 international dollars, taken from the World Development Indicators (WDI) released by the World Bank in August 2016. See the appendix for more details. GDP data for 2016 are not yet available, so we extend the GDP time series from 2015 to 2016 using country-specific forecasts of real GDP growth from the OECD Economic Outlook No. 99 (Edition 2016/1) and World Bank’s Global Economic Prospects (Last Updated: 01/06/2016), after adjustment for population growth. The equation uses the natural log of GDP per capita, as this form fits the data significantly better than GDP per capita. | 
+Healthy Life Expectancy |The time series of healthy life expectancy at birth are constructed based on data from the World Health Organization (WHO) and WDI. WHO publishes the data on healthy life expectancy for the year 2012. The time series of life expectancies, with no adjustment for health, are available in WDI. We adopt the following strategy to construct the time series of healthy life expectancy at birth: first we generate the ratios of healthy life expectancy to life expectancy in 2012 for countries with both data. We then apply the country-specific ratios to other years to generate the healthy life expectancy data. See the appendix for more details. | 
+Social Support | Social support is the national average of the binary responses (either 0 or 1) to the Gallup World Poll (GWP) question “If you were in trouble, do you have relatives or friends you can count on to help you whenever you need them, or not?” | 
+Freedom to make life choices |Freedom to make life choices is the national average of binary responses to the GWP question “Are you satisfied or dissatisfied with your freedom to choose what you do with your life?”  | 
+Generosity |Generosity is the residual of regressing the national average of GWP responses to the question “Have you donated money to a charity in the past month?” on GDP per capita. | 
 
 
 ### Data Acquisition via Webscraping: 

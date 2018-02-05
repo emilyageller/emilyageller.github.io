@@ -1,11 +1,5 @@
----
-layout: post
-title: Subway Traffic and Demographics in New York City -- Metis Project 1: Exploratory Data Analysis
-date: 2018-01-20 13:32:20 +0300
-description: # Add post description (optional)
-img: i-rest.jpg # Add image post (optional)
-tags: [Metis, Data Science]
----
+Metis Project 1: Exploratory Data Analysis
+
 
 We hit the ground running in our first week at the Metis Data Science Bootcamp!
 

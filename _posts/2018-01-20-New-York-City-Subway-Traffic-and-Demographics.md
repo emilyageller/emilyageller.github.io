@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Subway Traffic and Demographics in New York City
+title: Subway Traffic and Demographics in New York
 date: 2018-01-20 13:32:20 -0800
 description: # Add post description (optional)
 img: newyork.jpg # Add image post (optional)

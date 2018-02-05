@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Metis Project 1: Exploratory Data Analysis
+title: Subway Traffic and Demographics in New York City -- Metis Project 1: Exploratory Data Analysis
 date: 2018-01-20 13:32:20 +0300
 description: # Add post description (optional)
 img: i-rest.jpg # Add image post (optional)

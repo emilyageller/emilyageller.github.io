@@ -10,13 +10,14 @@ site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings
 author: Emily Geller # add your name
-author-img: https://avatars2.githubusercontent.com/u/17792423?s=460&v=4 # add your photo
+author-img: images/emily-geller.jpg # add your photo
 about-author: I'm a data scientist in Seattle, Washington. Always hungry to keep learning. # add description
 twitter: emilyageller# add your Twitter handle
 facebook: # add your Facebook handle
 github: emilyageller # add your Github handle
 linkedin: emily-geller-94a17799# add your Linkedin handle
 email: emilyageller@gmail.com# add your Email address
+instagram: adailyfind
 
 # Disqus
 discus-identifier:  # add your discus identifier

@@ -1,4 +1,11 @@
-## Metis Project 1: Exploratory Data Analysis
+---
+layout: post
+title: 
+date: 2018-01-20 13:32:20 +0300
+description: Metis Project 1: Exploratory Data Analysis# Add post description (optional)
+img: i-rest.jpg # Add image post (optional)
+tags: [Metis, Data Science]
+---
 
 We hit the ground running in our first week at the Metis Data Science Bootcamp!
 

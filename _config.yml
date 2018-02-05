@@ -10,8 +10,8 @@ site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings
 author: Emily Geller # add your name
-author-img: images/emily-geller.jpg # add your photo
-about-author: I'm a data scientist in Seattle, Washington. Always hungry to keep learning. # add description
+author-img: emily-geller.jpg # add your photo
+about-author: I'm a data scientist in Seattle, Washington. I love math, data and horchata.. and I'm always hungry to keep learning. # add description
 twitter: emilyageller# add your Twitter handle
 facebook: # add your Facebook handle
 github: emilyageller # add your Github handle

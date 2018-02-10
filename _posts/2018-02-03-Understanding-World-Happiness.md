@@ -43,17 +43,7 @@ Our second project at Metis required us to acquire our data by scraping websites
 
 I scraped 2017's World Happiness Report results from [Wikipedia](https://en.wikipedia.org/wiki/World_Happiness_Report) using Beautiful Soup.
 
-This was relatively simple since it was nicely formatted in an html table.  I just read it in with Beautiful Soup, and used pandas to put it straight into a dataframe:
-
-```
-wrld_happiness_url = 'https://en.wikipedia.org/wiki/World_Happiness_Report'
-response = requests.get(wrld_happiness_url)
-page = response.text
-soup = BeautifulSoup(page,"lxml")
-tables = soup.find_all('table')
-happiness_2017 = pd.read_html(str(tables[0]), header = 0, index_col = 0)[0]
-```
-Easy!
+This was relatively simple since it was nicely formatted in an html table.  I just read it in with Beautiful Soup, and used pandas to put it straight into a dataframe. Easy!
 
 | ![](../images/wrldhpnsscrape.png) |
 |:--:|

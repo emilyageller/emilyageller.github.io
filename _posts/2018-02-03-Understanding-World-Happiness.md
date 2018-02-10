@@ -10,8 +10,9 @@ tags: [Data Science, Regression, Metis, Happiness]
 
 Happiness is a hard thing to pin down.  It's both hard to measure and difficult to explain why some people are happier than others.  
 
-The UN endeavors tackle both questions with their annual World Happiness Report (now in it's 5th year), and in this post I'll show how I combined it with some other data to find relationships between a country's characteristics and it's World Happiness Score.
+The UN endeavors tackle both questions with their annual World Happiness Report (now in it's 5th year). 
 
+In this post I'll try and find which summary statistics for a given country (eg. GDP per capita, Education, etc) can explain their Happiness Score.
 
 
 ### Introducing the UN's World Happiness Report
@@ -22,7 +23,7 @@ The [UN's World Happiness Report](http://worldhappiness.report/) is 'a landmark 
 
 Each country's Happiness Score is calculated by taking an average of it's citizen's answers. The report also includes features that score each country on various categories (eg. GDP per capita, Healthy Life Expectancy. See Below).
 
-A complete explanation of the data collected can be found on the Report's website.  The features that I chose to encorporate in my project are defined (by the UN) as:
+A complete explanation of the data collected can be found on the Report's website.  The features that I chose to incorporate in my project are defined (by the UN) as:
 
 **Feature**   | **Definition** 
 ---------------|------------
@@ -67,7 +68,7 @@ For the code and functions that I built to scrape this set of data, you can head
 
 Each of the 155 countries had separate 'Country Fact' pages, so I had to figure out if there was a pattern in their url's so that I could build an automated scraping function.  Luckily there was, and there was also an element on the homepage that contained mappings between each Country's name and id (which was used inside the url for it's page).
 
-Using the country names that I found in the first dataset, I built a function that parsed each country's page.
+Using the country names that I found in the first dataset, I built a function to parse each country's page.
 
 The next step was finding the features in the page that I wanted! I reviewed the data on offer and (using my intuition) chose about 20.  The html on each of the country fact pages wasn't particularly easy to work with: it was non-heirarchical, which meant it took a bit more finesse to find each element I wanted.  There were also a few cases where features weren't standardized across countries, so that took a bit of wrangling too!
 

@@ -12,11 +12,11 @@ site-twitter: #if your site has a twitter account, enter it here
 author: Emily Geller # add your name
 author-img: emily-geller.jpg # add your photo
 about-author: I'm a data scientist in Seattle, Washington. I love math, data and horchata.. and I'm always hungry to keep learning. # add description
-twitter: emilyageller# add your Twitter handle
-facebook: # add your Facebook handle
-github: emilyageller # add your Github handle
-linkedin: emily-geller-94a17799# add your Linkedin handle
-email: emilyageller@gmail.com# add your Email address
+twitter: emilyageller
+facebook: emilyageller
+github: emilyageller
+linkedin: emily-geller
+email: emilyageller@gmail.com
 instagram: adailyfind
 
 # Disqus

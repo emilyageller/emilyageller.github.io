@@ -6,7 +6,7 @@ description: # Add post description (optional)
 img: airbnbfirstdestinations.jpg 
 tags: [Data Science, Classificiation, Metis, SQL, FLask, Airbnb, Travel]
 ---
-## Metis Project 3: Classification Modeling, SQL and Flask
+## --- Metis Project 3: Classification Modeling, SQL and Flask ---
 
 Can we predict new Airbnb users' very first destinations using their demographics and browsing behavior?
 

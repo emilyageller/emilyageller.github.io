@@ -6,7 +6,7 @@ description: # Add post description (optional)
 img: Summer-happiness-photo.jpg # Add image post (optional)
 tags: [Data Science, Regression, Metis, Happiness]
 ---
-## Metis Project 2: Webscraping and OLS Regression
+## --- Metis Project 2: Webscraping and OLS Regression ---
 
 Happiness is a hard thing to pin down.  It's both hard to measure and difficult to explain why some people are happier than others.  
 

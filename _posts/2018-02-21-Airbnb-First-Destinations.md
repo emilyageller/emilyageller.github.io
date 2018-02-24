@@ -81,7 +81,7 @@ I tried both upsampling and downsampling (with replacement), and found that upsa
 
 Once I had my data ready, I started building a few models to compare.  These included Logistic Regression, Naive Bayes (both Bernoulli and Gaussian), K Nearest Neighbors, Support Vector Machines and Random Forest ensembles. I performed grid searches on these, and found the best fits for each.  A comparison of ROC Curves can be seen in Figure 4.
 
-|![](../images/airbnbfirstdestinations/Roccurve.png)|
+|![](../images/airbnbfirstdestinations/RocCurve.png)|
 |:--:|
 |**Figure 4**:  ROC Curves for each of my models|
 
